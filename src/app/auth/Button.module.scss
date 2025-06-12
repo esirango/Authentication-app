@@ -1,5 +1,5 @@
 .button {
-    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    background: var(--primary-gradient);
     color: #fff;
     border: none;
     padding: 0.9rem 0;
@@ -10,7 +10,7 @@
     transition: background 0.2s;
 
     &:disabled {
-        background: #90caf9;
+        background: var(--button-disabled);
         cursor: not-allowed;
     }
 }

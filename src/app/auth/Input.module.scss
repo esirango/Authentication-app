@@ -5,24 +5,26 @@
 
     .label {
         font-size: 1rem;
-        color: #222;
+        color: var(--text);
         font-weight: 500;
     }
 
     .input {
         padding: 0.7rem 1rem;
-        border: 1px solid #cfd8dc;
+        border: 1px solid var(--input-border);
         border-radius: 0.5rem;
         font-size: 1rem;
         outline: none;
-        transition: border-color 0.2s;
+        background: var(--card-bg);
+        color: var(--text);
+        transition: border-color 0.2s, background 0.3s, color 0.3s;
 
         &:focus {
-            border-color: #1976d2;
+            border-color: var(--input-focus);
         }
     }
 
     .errorInput {
-        border-color: #d32f2f;
+        border-color: var(--error);
     }
 }
