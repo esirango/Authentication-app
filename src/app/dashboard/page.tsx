@@ -13,7 +13,7 @@ export default function Dashboard() {
                 router.replace("/auth");
             }
         }
-    }, [router]);
+    }, []);
 
     return (
         <main className={styles.dashboard}>
