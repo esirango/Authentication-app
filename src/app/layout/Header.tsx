@@ -1,5 +1,5 @@
 "use client";
-import { useTheme } from "../theme-context";
+import { useTheme } from "../context/theme-context";
 import styles from "./Header.module.scss";
 
 export default function Header() {

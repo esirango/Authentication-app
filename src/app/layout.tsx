@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 import "./globals.scss";
 import type { ReactNode } from "react";
-import { ThemeProvider } from "./theme-context";
+import { ThemeProvider } from "./context/theme-context";
 import Header from "./layout/Header";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
