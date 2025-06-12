@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./Dashboard.module.scss";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
