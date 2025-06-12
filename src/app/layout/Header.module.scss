@@ -81,3 +81,28 @@
         background: var(--switch-thumb-dark);
     }
 }
+
+@media (max-width: 500px) {
+    .header {
+        .logo {
+            gap: 0.1rem;
+
+            .title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--primary);
+                letter-spacing: -1px;
+            }
+        }
+    }
+
+    .themeSwitch {
+        width: 85px;
+    }
+
+    .themeSwitch.dark {
+        .switchThumb {
+            left: 15px;
+        }
+    }
+}

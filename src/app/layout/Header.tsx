@@ -70,8 +70,8 @@ export default function Header() {
                 </span>
             </button>
             <div className={styles.logo}>
-                <span>🦄</span>
                 <span className={styles.title}>Authentication App</span>
+                <span>🦄</span>
             </div>
         </header>
     );
