@@ -13,7 +13,6 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.response.use(
     (response) => response,
     (error) => {
-        console.log(error.message);
         return toast(error.message);
     }
 );
