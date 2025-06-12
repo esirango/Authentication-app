@@ -46,7 +46,7 @@ export default function AuthForm() {
                 label="شماره موبایل"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="مثال: 09121234567"
+                placeholder="09121234567"
                 error={!!error}
                 type="tel"
             />
