@@ -1,0 +1,16 @@
+.button {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+
+    &:disabled {
+        background: #90caf9;
+        cursor: not-allowed;
+    }
+}
