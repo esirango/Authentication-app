@@ -4,6 +4,7 @@ import Input from "./Input";
 import Button from "./Button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import axiosInstance from "../api/axios";
 
 const phoneRegex = /^(\+98|0)?9\d{9}$/;
 
@@ -24,11 +25,8 @@ export default function AuthForm() {
 
         setLoading(true);
         try {
-            const res = await fetch(
-                "https://randomuser.me/api/?results=1&nat=us"
-            );
-            const data = await res.json();
-            const user = data.results[0];
+            const res = await axiosInstance.get("/?results=1&nat=us");
+            const user = res.data.results[0];
             if (typeof window !== "undefined") {
                 localStorage.setItem("user", JSON.stringify(user));
             }
